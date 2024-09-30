@@ -95,7 +95,7 @@ class App extends React.Component {
     // const height = Number(330);
     const width = Number(image.width);
     const height = Number(image.height);
-    console.log(width, height);
+    //console.log(width, height);
     // const boundingBox = data.region.region_info.bounding_box;
     // const topRow = data.boundingBox.top_row.toFixed(3);
     // const leftCol = data.boundingBox.left_col.toFixed(3);
@@ -114,7 +114,7 @@ class App extends React.Component {
     };
   };
   displayFaceBox = (boxes) => {
-    console.log(boxes);
+    //console.log(boxes);
     this.setState({ boxes });
   };
   onInputChange = (event) => {
@@ -162,7 +162,7 @@ class App extends React.Component {
     })
       .then(response => response.json())
       .then(data => {
-        console.log(data);
+        //console.log(data);
         if (data) {
             fetch("https://face-recognition-backend-5lyf.onrender.com/image", {
               method: "put",
